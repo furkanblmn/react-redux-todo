@@ -9,14 +9,14 @@ export default function Item() {
         <div className="items">
             <h3 className="title">Todo List</h3>
             {
-                todo_item ?
+                todo_item.item && todo_item.item != "" ?
                     <div className="card">
                         <div className="card-body">
                             <ul className="list-group list-group-flush">
                                 {
-                                    todo_item.map((item, index) =>
+                                    todo_item.item.map((item,index) =>
                                         <li className="list-group-item" key={index}>
-                                            {item}
+                                            {item.text}
                                             <button onClick={() => dispatch(remove(index))} className="btn btn-warning float-right">Remove</button>
                                         </li>
                                     )
