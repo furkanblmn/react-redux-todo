@@ -1,0 +1,15 @@
+.items .card{
+    margin-bottom: 15px;
+}
+.items .card:first-child{
+    margin-top: 15px;
+}
+.items .card .card-body{
+    padding: 0;
+}
+.loading{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
